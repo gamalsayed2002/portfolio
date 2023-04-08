@@ -27,7 +27,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 0px;
 }
 ::-webkit-scrollbar-track {
   background-color: #333;
@@ -62,7 +62,7 @@ ul {
   width: 0;
   height: 2.3px;
   background-color: var(--main-color);
-  z-index: 1000;
+  z-index: 9000000000000000000000000;
   max-width: 100%;
 }
 /* end scroller */
@@ -571,8 +571,8 @@ ul {
   .portfolio .container .box::after {
     display: none !important;
   }
-  .active{
-    animation: none;
+  .active {
+    animation: active none;
   }
 }
 

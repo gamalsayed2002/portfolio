@@ -24,7 +24,6 @@ let ul = document.querySelector(".landing nav ul");
 let specail = document.querySelector(".specail");
 let nav = document.querySelector("nav");
 
-
 menu.onclick = function () {
   ul.classList.toggle("active");
   specail.classList.toggle("js-class");
@@ -34,7 +33,6 @@ window.onscroll = function () {
   console.log(this.scrollY);
   if (this.scrollY > 200) {
     nav.classList.add("fixed");
-    
   } else {
     nav.classList.remove("fixed");
   }
