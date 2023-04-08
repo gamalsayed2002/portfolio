@@ -31,7 +31,7 @@ menu.onclick = function () {
 
 window.onscroll = function () {
   console.log(this.scrollY);
-  if (this.scrollY > 200) {
+  if (this.scrollY > 85) {
     nav.classList.add("fixed");
   } else {
     nav.classList.remove("fixed");
