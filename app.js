@@ -17,7 +17,7 @@ window.addEventListener("scroll", () => {
 let scrollW = document.querySelector(".scroll-to-up");
 window.onscroll = function () {};
 
-console.log("scroll:", scroll);
+
 // start nav
 let menu = document.querySelector(".menu");
 let ul = document.querySelector(".landing nav ul");
@@ -30,7 +30,7 @@ menu.onclick = function () {
 };
 
 window.onscroll = function () {
-  console.log(this.scrollY);
+  
   if (this.scrollY > 85) {
     nav.classList.add("fixed");
   } else {

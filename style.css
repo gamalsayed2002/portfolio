@@ -334,6 +334,7 @@ ul {
   gap: 20px;
   row-gap: 30px;
   z-index: 1;
+  flex-wrap: wrap;
 
   padding-top: 50px;
 }
@@ -573,6 +574,9 @@ ul {
   }
   .active {
     animation: active none;
+  }
+  .portfolio .main-h2{
+    font-size: 25px;
   }
 }
 
