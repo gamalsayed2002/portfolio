@@ -575,7 +575,7 @@ ul {
   .active {
     animation: active none;
   }
-  .portfolio .main-h2{
+  .portfolio .main-h2 {
     font-size: 25px;
   }
 }

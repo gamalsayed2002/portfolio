@@ -15,7 +15,8 @@
     rel="stylesheet" />
   <!-- title icon -->
   <link rel="icon" href="icons/1486503764-browser-interface-ui-design-layout-website_81271.ico" />
-
+  <!-- wow -->
+  <link rel="stylesheet" href="wow/animate.css">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -32,7 +33,7 @@
     <nav>
       <h2 class="main-color">portfolio</h2>
       <ul>
-        <li><a href="#About">About Us</a></li>
+        <li><a href="#About">About</a></li>
         <li><a href="#Services">Services</a></li>
         <li><a href="#Skills">Skills</a></li>
         <li><a href="#Portfolio">Portfolio</a></li>
@@ -94,9 +95,9 @@
 
 
   <section class="Services" id="Services">
-    <h2 class="main-h2"> My <span class="main-color">Services</span> </h2>
+    <h2 class="main-h2 wow fadeIn" data-wow-duration="1s"> My <span class="main-color">Services</span> </h2>
     <div class="container">
-      <div class="card">
+      <div class="card wow fadeInDownBig" data-wow-delay="0s">
         <i class="fa-solid fa-code main-color"></i>
         <h3>Web Development</h3>
         <p>
@@ -104,7 +105,7 @@
           programming tools</p>
       </div>
 
-      <div class="card">
+      <div class="card wow fadeInDownBig" data-wow-delay=".2s">
         <i class="fa-solid fa-user main-color"></i>
         <h3>Ui<span class="main-color">&</span>Ux Design</h3>
         <p>Building the latest website and application designs through one of the most famous and best design programs
@@ -117,7 +118,7 @@
 
 
 
-      <div class="card">
+      <div class="card wow fadeInDownBig" data-wow-delay=".4s">
         <i class="fa-solid fa-keyboard main-color"></i>
         <h3>PDF <i class="fa-solid fa-arrows-left-right main-color"></i> WORD
         </h3>
@@ -128,7 +129,7 @@
       </div>
 
 
-      <div class="card">
+      <div class="card wow fadeInDownBig" data-wow-delay=".6s">
         <i class="fa-solid fa-image main-color"></i>
         <h3>Photo Editing</h3>
 
@@ -138,7 +139,7 @@
 
       </div>
 
-      <div class="card">
+      <div class="card wow fadeInDownBig" data-wow-delay=".8s">
         <i class="fa-solid fa-eye main-color"></i>
         <h3>Visual identity design</h3>
 
@@ -236,33 +237,7 @@
         <span class="skill-progress" data-width="80%"></span>
       </div>
 
-
-
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   </section>
 
@@ -275,13 +250,13 @@
     <div class="container">
 
       <div class="box">
-        <a href="https://gamalsayed2002.github.io/template-1/"
-          target="_blank"><img src="imgs/template 1.jpeg" alt=""></a>
+        <a href="https://gamalsayed2002.github.io/template-1/" target="_blank"><img src="imgs/template 1.jpeg"
+            alt=""></a>
       </div>
 
       <div class="box">
-        <a href="https://gamalsayed2002.github.io/template-3/"
-          target="_blank"><img src="imgs/template 3.jpeg" alt=""></a>
+        <a href="https://gamalsayed2002.github.io/template-3/" target="_blank"><img src="imgs/template 3.jpeg"
+            alt=""></a>
       </div>
 
 
@@ -294,28 +269,28 @@
 
 
 
-    
 
-    <div class="box">
-      <a href="https://gamalsayed2002.github.io/template4/"
-        target="_blank"><img src="imgs/WhatsApp Image 2023-04-09 at 3.21.13 PM.jpeg" alt=""></a>
+
+      <div class="box">
+        <a href="https://gamalsayed2002.github.io/template4/" target="_blank"><img
+            src="imgs/WhatsApp Image 2023-04-09 at 3.21.13 PM.jpeg" alt=""></a>
+      </div>
+
+
+
+
+
+
+      <div class="box">
+        <a href="https://gamalsayed2002.github.io/image/" target="_blank"><img
+            src="imgs/WhatsApp Image 2023-04-09 at 3.21.55 PM.jpeg" alt=""></a>
+      </div>
+
+
+
+
     </div>
-
-
-
-
- 
-
-  <div class="box">
-    <a href="https://gamalsayed2002.github.io/image/"
-      target="_blank"><img src="imgs/WhatsApp Image 2023-04-09 at 3.21.55 PM.jpeg" alt=""></a>
-  </div>
-
-
-    
-  
-</div>
-</section>
+  </section>
 
 
 
@@ -336,7 +311,10 @@
     </div>
   </section>
 
-
+  <script src="wow/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="app.js"></script>
 </body>
 
