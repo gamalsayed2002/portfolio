@@ -7,7 +7,6 @@ let height =
 
 window.addEventListener("scroll", () => {
   let scrollTop = document.documentElement.scrollTop;
-  console.log(scrollTop);
 
   ele.style.width = `${(scrollTop / height) * 100}%`;
 });
@@ -65,3 +64,5 @@ window.onscroll = function () {
     });
   }
 };
+
+
