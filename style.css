@@ -172,9 +172,12 @@ ul {
 }
 .landing .Home .content .socail {
   padding-top: 70px;
+  display: flex;
+  gap: 15px;
 }
+
 .landing .Home .content .socail a {
-  padding-right: 20px;
+ 
 }
 .landing .Home .content .socail a img {
   width: 40px;
@@ -187,7 +190,7 @@ ul {
   width: 450px;
   margin-bottom: 20px;
   transition: var(--main-transition);
-  animation: landing 1s forwards;
+
 }
 
 /* start about section */
@@ -278,7 +281,6 @@ ul {
 
 .skills .container {
   display: flex;
-  padding: 0 20px;
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
@@ -291,7 +293,7 @@ ul {
   position: relative;
   cursor: pointer;
   transition: var(--main-transition);
-  width: 175px;
+  width: 150px;
 }
 .skills .container .box img {
   width: 100px;
@@ -395,54 +397,6 @@ ul {
 
 /* start animation */
 /* landing */
-@keyframes landing {
-  0% {
-    margin-left: 30%;
-    opacity: 0;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
-
-@keyframes landing2 {
-  0% {
-    margin-top: 10%;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes js {
-  0% {
-    margin-left: 30px;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
-
-@keyframes js2 {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: auto;
-  }
-}
-@keyframes services {
-  0% {
-    margin-top: 2000px;
-    opacity: 0;
-  }
-  100% {
-    margin-top: 0;
-    opacity: 1;
-  }
-}
 @keyframes fixed {
   0% {
     top: -60px;
@@ -462,16 +416,6 @@ ul {
   }
 }
 
-@keyframes active {
-  0% {
-    opacity: 0;
-    z-index: -10;
-  }
-  100% {
-    opacity: 1;
-    z-index: 500;
-  }
-}
 /* end animarion */
 
 /* start media  */

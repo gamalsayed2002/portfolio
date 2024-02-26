@@ -49,20 +49,23 @@ window.onscroll = function () {
     });
   });
   //progress
-  let progress = document.querySelectorAll(".skill-progress");
-  if (this.scrollY >= 1200) {
-    progress.forEach((ele) => {
-      ele.style.width = ele.dataset.width;
-    });
-  } else if (this.scrollY < 1000) {
-    progress.forEach((ele) => {
-      ele.style.width = 0;
-    });
-  } else if (this.scrollY > 1500) {
-    progress.forEach((ele) => {
-      ele.style.width = 0;
-    });
-  }
+  // let progress = document.querySelectorAll(".skill-progress");
+  // if (this.scrollY >= 1200) {
+  //   progress.forEach((ele) => {
+  //     ele.style.width = ele.dataset.width;
+  //   });
+  // } else if (this.scrollY < 1000) {
+  //   progress.forEach((ele) => {
+  //     ele.style.width = 0;
+  //   });
+  // } else if (this.scrollY > 1500) {
+  //   progress.forEach((ele) => {
+  //     ele.style.width = 0;
+  //   });
+  // }
 };
+let progress = document.querySelectorAll(".skill-progress");
 
-
+progress.forEach((ele) => {
+  ele.style.width = ele.dataset.width;
+});
