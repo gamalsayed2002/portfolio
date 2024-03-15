@@ -177,7 +177,6 @@ ul {
 }
 
 .landing .Home .content .socail a {
- 
 }
 .landing .Home .content .socail a img {
   width: 40px;
@@ -190,7 +189,6 @@ ul {
   width: 450px;
   margin-bottom: 20px;
   transition: var(--main-transition);
-
 }
 
 /* start about section */
@@ -274,7 +272,7 @@ ul {
 
 /* end services */
 /* start skills */
-.skills {
+/* .skills {
   background: var(--bgcolor2);
   padding: 20px;
 }
@@ -319,9 +317,81 @@ ul {
   left: 0;
   bottom: 0;
   border-radius: 5px;
-}
+} */
 
 /* end skills */
+
+.skills {
+  padding: 50px 20px;
+  background-color: var(--bgcolor2);
+}
+.skills h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+  margin: 0 0 50px;
+  text-align: center;
+}
+.skills .skill-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.skills .container {
+  display: flex;
+}
+.skills .container .secContainer {
+  flex: 1;
+}
+
+.skills .skill-box .skill-name {
+  font-weight: bold;
+  width: 140px;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+.skills .skill-box .skill-progress {
+  height: 25px;
+  width: 80%;
+  background-color: #f6f6f6;
+  border-radius: 500px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -o-border-radius: 500px;
+}
+.skills .skill-box .skill-progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--main-color);
+  transition: all 3s;
+}
+
+/* start media for sills */
+
+@media (max-width: 700px) {
+  .skills .skill-box .skill-progress {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .skills .container {
+    flex-direction: column;
+  }
+}
+/* End Skills */
+
 /* start portfoilo */
 
 .portfolio {

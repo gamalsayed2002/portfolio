@@ -48,24 +48,42 @@ window.onscroll = function () {
       specail.classList.remove("js-class");
     });
   });
-  //progress
-  // let progress = document.querySelectorAll(".skill-progress");
-  // if (this.scrollY >= 1200) {
-  //   progress.forEach((ele) => {
-  //     ele.style.width = ele.dataset.width;
-  //   });
-  // } else if (this.scrollY < 1000) {
-  //   progress.forEach((ele) => {
-  //     ele.style.width = 0;
-  //   });
-  // } else if (this.scrollY > 1500) {
-  //   progress.forEach((ele) => {
-  //     ele.style.width = 0;
-  //   });
-  // }
+
 };
 let progress = document.querySelectorAll(".skill-progress");
 
 progress.forEach((ele) => {
   ele.style.width = ele.dataset.width;
 });
+
+// Select Skills Selector 
+let ourSkills = document.querySelector(".skills");
+
+window.onscroll = function () {
+
+// Skills Offset Top 
+let skillsOffsetTop = ourSkills.offsetTop;
+
+//Skills Outer Height 
+let skillsOuterHeight = ourSkills.offsetHeight;
+
+// Window Height
+let windowHeight = this.innerHeight;    
+
+//Window ScrollTop
+let windowScrollTop = this.pageYOffset;     
+
+
+if(windowScrollTop < (skillsOffsetTop + skillsOuterHeight - windowHeight)){
+
+    let allSkills = document.querySelectorAll(".skill-box .skill-progress span");
+    allSkills.forEach(skill =>  {
+
+        skill.style.width = skill.dataset.progress;
+
+    });
+}
+
+};
+
+
