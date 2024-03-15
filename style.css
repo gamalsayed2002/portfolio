@@ -271,55 +271,8 @@ ul {
 }
 
 /* end services */
+
 /* start skills */
-/* .skills {
-  background: var(--bgcolor2);
-  padding: 20px;
-}
-
-.skills .container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.skills .container .box {
-  background: var(--bgcolor);
-  text-align: center;
-  padding: 20px;
-  border-radius: 6px;
-  position: relative;
-  cursor: pointer;
-  transition: var(--main-transition);
-  width: 150px;
-}
-.skills .container .box img {
-  width: 100px;
-}
-
-.skills .container .box:hover h3 {
-  color: var(--light-color);
-}
-.skills .container .box:hover {
-  transform: scale(1.05);
-}
-
-.skills .container .box h3 {
-  transition: var(--main-transition);
-}
-
-.skills .container .box .skill-progress {
-  background-color: var(--main-color);
-  position: absolute;
-  transition: 2s;
-  height: 3px;
-  width: 0px;
-  left: 0;
-  bottom: 0;
-  border-radius: 5px;
-} */
-
-/* end skills */
 
 .skills {
   padding: 50px 20px;
